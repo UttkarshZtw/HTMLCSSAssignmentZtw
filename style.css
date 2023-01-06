@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navigation-section{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+li{
+    margin: 10px;
+    padding: 10px;
+}
+
+.drop-down{
+    display: block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.drop-down:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-content > span{
+    margin: 5px 5px;
+    padding: 2px 0px;
+    background-color: white;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+}
+.left-section{
+    width: 30%;
+}
+.left-section >ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin: 10px;
+}
+.right-section{
+    width: 70%;
+}
+.right-section > h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.gallery-post{
+    max-width: 30%;
+    margin: 20px 0px;
+}
